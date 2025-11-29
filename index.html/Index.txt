@@ -1,0 +1,19 @@
+html
+---
+layout: home
+---
+<section class="hero">
+<h1>Arian Designs</h1>
+<p>Clean • Minimal • Modern</p>
+</section>
+<section class="latest-posts">
+<h2>Latest Blogs</h2>
+<ul>
+{% for post in site.posts limit:3 %}
+<li>
+<a href="{{ post.url }}">{{ post.title }}</a>
+<span>{{ post.date | date: "%b %d, %Y" }}</span>
+</li>
+{% endfor %}
+</ul>
+</section>

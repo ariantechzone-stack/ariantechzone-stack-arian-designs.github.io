@@ -1,0 +1,11 @@
+yaml
+title: "Arian Designs"
+description: "Modern Clean Blog + Portfolio"
+baseurl: ""
+url: "https://YOUR-USERNAME.github.io"
+theme: minima
+markdown: kramdown
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+permalink: /blog/:title/
